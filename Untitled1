@@ -12,37 +12,37 @@ int main() {
         cout << "CALCULADORA" << endl;
         cout << "1. Suma" << endl;
         cout << "2. Resta" << endl;
-        cout << "3. Multiplicación" << endl;
-        cout << "4. División" << endl;
+        cout << "3. MultiplicaciÃ³n" << endl;
+        cout << "4. DivisiÃ³n" << endl;
         cout << "5. Potencia" << endl;
-        cout << "6. Raíz" << endl;
-        cout << "Ingrese el número de la operación que desea realizar: ";
+        cout << "6. RaÃ­z" << endl;
+        cout << "Ingrese el nÃºmero de la operaciÃ³n que desea realizar: ";
         cin >> opcion;
 
         switch (opcion) {
             case 1:
-                cout << "Ingrese el primer número: ";
+                cout << "Ingrese el primer nÃºmero: ";
                 cin >> num1;
-                cout << "Ingrese el segundo número: ";
+                cout << "Ingrese el segundo nÃºmero: ";
                 cin >> num2;
                 resultado = num1 + num2;
                 cout << "El resultado de la suma es: " << resultado << endl;
                 break;
             case 2:
-                cout << "Ingrese el primer número: ";
+                cout << "Ingrese el primer nÃºmero: ";
                 cin >> num1;
-                cout << "Ingrese el segundo número: ";
+                cout << "Ingrese el segundo nÃºmero: ";
                 cin >> num2;
                 resultado = num1 - num2;
                 cout << "El resultado de la resta es: " << resultado << endl;
                 break;
             case 3:
-                cout << "Ingrese el primer número: ";
+                cout << "Ingrese el primer nÃºmero: ";
                 cin >> num1;
-                cout << "Ingrese el segundo número: ";
+                cout << "Ingrese el segundo nÃºmero: ";
                 cin >> num2;
                 resultado = num1 * num2;
-                cout << "El resultado de la multiplicación es: " << resultado << endl;
+                cout << "El resultado de la multiplicaciÃ³n es: " << resultado << endl;
                 break;
             case 4:
                 cout << "Ingrese el dividendo: ";
@@ -51,7 +51,7 @@ int main() {
                 cin >> num2;
                 if (num2 != 0) {
                     resultado = num1 / num2;
-                    cout << "El resultado de la división es: " << resultado << endl;
+                    cout << "El resultado de la divisiÃ³n es: " << resultado << endl;
                 } else {
                     cout << "No se puede dividir entre cero." << endl;
                 }
@@ -65,21 +65,21 @@ int main() {
                 cout << "El resultado de la potencia es: " << resultado << endl;
                 break;
             case 6:
-                cout << "Ingrese el número: ";
+                cout << "Ingrese el nÃºmero: ";
                 cin >> num1;
                 if (num1 >= 0) {
                     resultado = sqrt(num1);
-                    cout << "El resultado de la raíz es: " << resultado << endl;
+                    cout << "El resultado de la raÃ­z es: " << resultado << endl;
                 } else {
-                    cout << "No se puede calcular la raíz de un número negativo." << endl;
+                    cout << "No se puede calcular la raÃ­z de un nÃºmero negativo." << endl;
                 }
                 break;
             default:
-                cout << "Opción inválida. Por favor, ingrese un número del 1 al 6." << endl;
+                cout << "OpciÃ³n invÃ¡lida. Por favor, ingrese un nÃºmero del 1 al 6." << endl;
                 break;
         }
 
-        cout << "¿Desea realizar otra operación? (s/n): ";
+        cout << "Â¿Desea realizar otra operaciÃ³n? (s/n): ";
         cin >> continuar;
     } while (continuar == 's' || continuar == 'S');
 
